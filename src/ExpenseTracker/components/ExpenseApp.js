@@ -1,11 +1,12 @@
 import ExpenseItem from "./ExpenseItem";
+import Card from "./Utils/Card/Card"
 import "./ExpenseApp.css";
 
 function ExpenseApp(props) {
   const expenses = props.expenses;
 
   return (
-    <div className="expenses">
+    <Card className="expenses">
       <h1>Expense Tracker</h1>
 
       <ExpenseItem
@@ -31,7 +32,7 @@ function ExpenseApp(props) {
         amount={expenses[3].amount}
         date={expenses[3].date}
       ></ExpenseItem>
-    </div>
+    </Card>
   );
 }
 
