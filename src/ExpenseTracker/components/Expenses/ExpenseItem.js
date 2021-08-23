@@ -1,6 +1,6 @@
 import "./ExpenseItem.css";
 import ExpenseDate from "./ExpenseDate";
-import Card from "./Utils/Card/Card";
+import Card from "../Utils/Card/Card";
 
 function ExpenseItem(props) {
   const expenseTitle = props.title;
