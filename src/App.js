@@ -1,5 +1,6 @@
 import "./App.css";
 import ExpenseApp from "./ExpenseTracker/components/Expenses/ExpenseApp";
+import NewExpense from "./ExpenseTracker/components/newExpense/NewExpense";
 
 function App() {
   const expenses = [
@@ -26,7 +27,8 @@ function App() {
 
   return (
     <div className="App">
-      <ExpenseApp expenses={expenses}></ExpenseApp>
+      <NewExpense />
+      <ExpenseApp expenses={expenses} />
     </div>
   );
 }
